@@ -1,13 +1,230 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Circularstd';
+  src: url('./utils/fonts/circular-std-medium-500.ttf');
+}
+
+@font-face {
+  font-family: 'Book';
+  src: url('./utils/fonts/CircularStd-Book.ttf');
+}
+
+:root {
+  --fontFamily: 'Circularstd';
+  --small: 12px;
+  --medium: 16px;
+  --big: 24;
+  --large: 32
+}
+.button_content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+.button_content .text{
+  padding:8px;
+}
+
+/* Header Section  */
+.heroContainer {
+  width: 100%;
+}
+
+.main-hero {
+  width: 80%;
+}
+
+.section {
+  display: flex;
+  color: #fff;
+}
+
+.section__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin: 0 60px;
+  padding: 12px;
+}
+
+.link__container {
+  display: flex;
+  align-items: center;
+}
+
+.section__logo img {
+  width: 150px;
+}
+
+.main__link {
+  margin-right: 40px;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  /* font-weight: 400; */
+  font-style: normal;
+  font-family: var(--fontFamily);
+}
+
+
+/* Hero section */
+.hero {
+  display: flex;
+  flex: 1;
+  margin-top: 5%;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  padding: 20px;
+  margin: auto;
+  width: 90%
+}
+
+.timely__header {
+  padding: 15px
+}
+
+.timely__header .timely__text {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Book';
+  text-align: center;
+}
+
+.gradient__01 {
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(156deg, rgba(16, 254, 245, 1) 44%, rgba(74, 223, 192, 1) 78%);
+  font-family: 'Circularstd'
+}
+
+.timely__main {
+  font-family: 'Circularstd';
+  font-style: normal;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  font-size: 120px;
+  line-height: 108px;
+  text-align: center;
+}
+
+.timely__last {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Book';
+  margin: 25px 0;
+  text-align: center;
+  width: 50%;
+}
+
+.gradient__02 {
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(-40deg, #18ffc3, #d4bbff, #8578e6, #18ffc3, #d4bbff) !important;
+  background-size: 300%;
+  animation: gradient 20s ease infinite;
+}
+.timely__button{
+  margin:20px  0;
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Video section  */
+.video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video__container{
+  width:90%;
+}.video__container video{
+  border-radius: 30px;
+  width:100%;
+  height: 100%;
+}
+
+/* companies images */
+.timely__companies{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin:5% auto;
+  padding:5px 0;
+  width:100%;
+}
+.timely__companiesHeader{
+  text-align: center;
+}
+.timely__images{
+  display:flex;
+  flex-wrap: wrap;
+  margin:0; 
+}
+.timely__images  .main__image{
+  margin:2px;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* MEDIA QUERY FOR header */
+
+@media screen and (max-width: 992px) {
+  .link__container {
+    display: none
+  }
+  .section__logo img {
+    width: 130px;
+  }
+
+.hero__container {
+
+  width: 100%
+}
+}
+
+@media screen and (max-width:768px) {
+  .section__container {
+    padding: 10px;
+    margin: 0 20px;
+  }
+
+  .timely__main {
+    font-size: 100px;
+    width:80%;
+    line-height: 100px;
+    text-align: center;
+  }
+  .timely__last {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width:468px) {
+  .timely__main {
+    font-size: 30px;
+    line-height: 27px;
+    text-align: center;
+  }
 }
