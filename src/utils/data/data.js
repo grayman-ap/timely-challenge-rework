@@ -6,6 +6,9 @@ import img5 from "../assets/workdoy.svg"
 import img6 from "../assets/marriott.svg"
 import img7 from "../assets/yale.svg"
 import img8 from "../assets/grant.svg"
+import {MdOutlineEventAvailable} from 'react-icons/md'
+import {FiUsers} from 'react-icons/fi'
+import {TbFileSpreadsheet, TbClockEdit} from 'react-icons/tb'
 export const headerData = [
     // {
     //     id: 1,
@@ -41,7 +44,8 @@ export const headerData = [
 export const color={
     primary: '#491C8B',
     white: '#fff',
-    secondary: '#001141'
+    secondary: '#001141',
+    black:'#000'
 }
 
 export const company =[
@@ -78,4 +82,39 @@ export const company =[
         img:img8
     },
     
+]
+
+export const trackData = [
+    {
+        id: 1,
+        icon: <TbClockEdit />,
+        title: 'Track time',
+        content:'Get the complete picture of your work day with zero effort',
+        link:'Automate time tracking',
+        url: 'automatic-time-tracking'
+    },
+    {
+        id: 2,
+        icon: <MdOutlineEventAvailable />,
+        title: 'Track projects',
+        content:'Monitor budgets, hours and activities in real time',
+        link:'Run smarter projects',
+        url: 'track-projects'
+    },
+    {
+        id: 3,
+        icon: <FiUsers />,
+        title: 'Track teams',
+        content:'Get a complete overview of your team’s time',
+        link:'Lead happier teams',
+        url: 'track-teams'
+    },
+    {
+        id: 4,
+        icon: <TbFileSpreadsheet />,
+        title: 'Track plans',
+        content:'Real-time feedback loop of how plans actually unfold',
+        link:'Project and team planning',
+        url: 'planning'
+    },
 ]

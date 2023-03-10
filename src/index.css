@@ -21,14 +21,16 @@
   --big: 24;
   --large: 32
 }
-.button_content{
+
+.button_content {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 15px;
 }
-.button_content .text{
-  padding:8px;
+
+.button_content .text {
+  padding: 8px;
 }
 
 /* Header Section  */
@@ -136,48 +138,58 @@
   background-size: 300%;
   animation: gradient 10s ease infinite;
 }
-.timely__button{
-  margin:20px  0;
-  width:100%;
+
+.timely__button {
+  margin: 50px 0;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
 /* Video section  */
-.video{
+.video {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
-.video__container{
-  width:90%;
-}.video__container video{
+
+.video__container {
+  width: 90%;
+  padding: 0 0 100px 0;
+}
+
+.video__container video {
   border-radius: 20px;
-  width:100%;
+  width: 100%;
   height: 100%;
 }
 
 /* companies images */
-.timely__companies{
+.timely__companies {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin:5% auto;
-  padding:5px 0;
-  width:100%;
+  margin: 5% auto;
+  padding: 5px 0;
+  width: 100%;
 }
-.timely__companiesHeader{
+
+.timely__companiesHeader {
   text-align: center;
 }
-.timely__images{
-  display:flex;
+
+.timely__images {
+  display: flex;
   flex-wrap: wrap;
-  margin:0; 
+  margin: 0;
 }
-.timely__images  .main__image{
-  margin:2px;
+
+.timely__images .main__image {
+  margin: 2px;
 }
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -188,20 +200,129 @@
   }
 }
 
+/* The second component is starting from here */
+.tracking {
+  margin: 40px 0;
+}
+
+.tracking__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px;
+  margin: 50px;
+}
+
+.tracking .tracking__mainContent {
+  width: 50%
+}
+
+.tracking .tracking__mainContent p {
+  font-size: 20px;
+  line-height: 30px;
+  font-style: normal;
+  font-family: 'Book';
+  font-weight: 400;
+  color: rgb(0, 17, 65);
+  margin-bottom: 30px;
+}
+
+.tracking__mainContent p:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.tracking__text {
+  width: 40%
+}
+
+.tracking__text p {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 72px;
+  font-style: normal;
+  color: rgb(0, 17, 65);
+  font-family: var(--fontFamily);
+}
+
+.tracking__text span {
+  color: rgb(138, 63, 252);
+}
+
+.tracking .borderBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.borderBottom span {
+  width: 5%;
+  height: 2px;
+  background-color: #8b3ffc83;
+  margin-bottom: 70px;
+}
+
+.tracker__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+  padding: 20px;
+  gap:20px;
+}
+.track__data{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+.track__data .icon{
+  font-size: 50px;
+  color: #A368FD !important;
+}
+.track__data .title{
+  font-size:35px ;
+  color:rgb(0, 17, 65);
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 700;
+  margin:15px 0 0 0;
+}
+.track__data .content{
+  font-size: 20px;
+  font-family: 'Book';
+  font-weight: 400;
+  color:rgb(105, 112, 119);
+  font-style: normal;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+.track__data .link{
+  color: rgb(138, 63, 252);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+
+}
+.track__data .link span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* MEDIA QUERY FOR header */
 
 @media screen and (max-width: 992px) {
   .link__container {
     display: none
   }
+
   .section__logo img {
     width: 130px;
   }
 
-.hero__container {
-
-  width: 100%
-}
+  .hero__container {
+    width: 100%
+  }
 }
 
 @media screen and (max-width:768px) {
@@ -212,12 +333,51 @@
 
   .timely__main {
     font-size: 100px;
-    width:80%;
+    width: 80%;
     line-height: 100px;
     text-align: center;
   }
+
   .timely__last {
     width: 90%;
+  }
+
+  .tracking__container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 20px;
+  }
+
+  .tracking .tracking__mainContent {
+    width: 100%
+  }
+
+  .tracking__text {
+    width: 90%
+  }
+
+  .tracking__text p {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    font-style: normal;
+    color: rgb(0, 17, 65);
+    font-family: var(--fontFamily);
+  }
+
+  .tracking .tracking__mainContent p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .tracker__container {
+    flex-direction: column;
+  }
+  .track__data{
+    align-items: center;
+  }
+  .track__data .title{
+    font-size:30px ;
   }
 }
 
