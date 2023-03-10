@@ -134,7 +134,7 @@
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(-40deg, #18ffc3, #d4bbff, #8578e6, #18ffc3, #d4bbff) !important;
   background-size: 300%;
-  animation: gradient 20s ease infinite;
+  animation: gradient 10s ease infinite;
 }
 .timely__button{
   margin:20px  0;
@@ -152,7 +152,7 @@
 .video__container{
   width:90%;
 }.video__container video{
-  border-radius: 30px;
+  border-radius: 20px;
   width:100%;
   height: 100%;
 }
