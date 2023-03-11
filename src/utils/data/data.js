@@ -13,6 +13,18 @@ import logo5 from '../assets/result.svg'
 import {MdOutlineEventAvailable} from 'react-icons/md'
 import {FiUsers} from 'react-icons/fi'
 import {TbFileSpreadsheet, TbClockEdit} from 'react-icons/tb'
+
+import pic1 from '../assets/Laura.webp'
+import pic2 from '../assets/fiserova.webp'
+import pic3 from '../assets/cecillia.svg'
+import pic4 from '../assets/gerrad.webp'
+import pic5 from '../assets/aamrit.webp'
+import pic6 from '../assets/jane.webp'
+import pic7 from '../assets/jens.webp'
+import pic8 from '../assets/giovanni.webp'
+import pic9 from '../assets/cecillia.svg'
+import pic10 from '../assets/cecillia.svg'
+import star from '../assets/star.svg'
 export const headerData = [
     // {
     //     id: 1,
@@ -55,35 +67,51 @@ export const color={
 export const company =[
     {
         id: '1',
-        img: img1
+        img: img1,
+        star:star,
+        position:'Author/Director'
     },
     {
         id: '2',
-        img: img2
+        img: img2,
+        star:star,
+        position:'Author/Director'
     },
     {
         id: '3',
-        img: img3
+        img: img3,
+        star:star,
+        position:'Author/Director'
     },
     {
         id: '4',
-        img: img4
+        img: img4,
+        star:star,
+        position:'Author/Director'
     },
     {
         id: '5',
-        img: img5
+        img: img5,
+        star:star,
+        position:'Author/Director'
     },
     {
         id: '6',
-        img: img6
+        img: img6,
+        star:star,
+        position:'Author/Director'
     },
     {
         id: '7',
-        img: img7
+        img: img7,
+        star:star,
+        position:'Author/Director'
     },
     {
         id: '8',
-        img:img8
+        img:img8,
+        star:star,
+        position:'Author/Director'
     },
     
 ]
@@ -140,4 +168,85 @@ export const trustData =[
         id: 5,
         img: logo5,
     }
+]
+
+
+export const scrollDataLeft =[
+    {
+        id:1,
+        content: "User-friendly and effective",
+        img:pic1,
+        star:star,
+        position:'Author/Director',
+        name:'Cory James'
+    },
+    {
+        id:2,
+        content: "User-friendly and effective",
+        img:pic2,
+        star:star,
+        position:'Author/Director',
+        name:'Cory James'
+    },
+    {
+        id:3,
+        content: "User-friendly and effective",
+        img:pic3,
+        star:star,
+        position:'Author/Director',
+        name:'Cory James'
+    },
+    {
+        id:4,
+        content: "User-friendly and effective",
+        img:pic4
+    },
+    {
+        id:5,
+        content: "User-friendly and effective",
+        img:pic5,
+        star:star,
+        position:'Author/Director',
+        name:'Cory James'
+    },
+    {
+        id:6,
+        content: "User-friendly and effective",
+        img:pic6,
+        star:star,
+        position:'Author/Director',
+        name:'Cory James'
+    },
+    {
+        id:7,
+        content: "User-friendly and effective",
+        img:pic7,
+        star:star,
+        position:'Author/Director',
+        name:'Cory James'
+    },
+    {
+        id:8,
+        content: "User-friendly and effective",
+        img:pic8,
+        star:star,
+        position:'Author/Director',
+        name:'Cory James'
+    },
+    {
+        id:9,
+        content: "User-friendly and effective",
+        img:pic9,
+        star:star,
+        position:'Author/Director',
+        name:'Cory James'
+    },
+    {
+        id:10,
+        content: "User-friendly and effective",
+        img:pic10,
+        star:star,
+        position:'Author/Director',
+        name:'Cory James'
+    },
 ]
