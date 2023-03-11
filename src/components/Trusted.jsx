@@ -1,6 +1,7 @@
 import React from "react";
 import logo1 from "../utils/assets/rank.svg";
 import { trustData } from "../utils/data/data";
+import quote from '../utils/assets/quote.svg'
 import Button from "./Button";
 
 function Trusted() {
@@ -8,6 +9,7 @@ function Trusted() {
     <div className="trusted">
       <div className="trusted__container">
         <div className="trusted__map">
+
           <div className="rank">
             <img src={logo1} alt="rank" style={{ width: 120 }} />
           </div>

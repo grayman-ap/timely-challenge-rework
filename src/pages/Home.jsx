@@ -4,6 +4,7 @@ import TimelyContainer from '../container/TimelyContainer'
 import TrustedContainer from '../container/TrustedContainer'
 import StepContainer from '../container/StepContainer'
 import StackContainer from '../container/StackContainer'
+import FooterContainer from '../container/FooterContainer'
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <TrustedContainer />
       <StepContainer />
       <StackContainer />
+      <FooterContainer />
   </div>
   )
 }

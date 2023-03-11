@@ -362,3 +362,94 @@ export const stackIcon=[
     },
 
 ]
+export const footerData={
+    link1:[
+        {
+            id: 1,
+            header: "Compare",
+        },
+        {
+            id: 2,
+            link: "Clockify Alternative",
+            url:'alternative'
+        },
+        {
+            id: 3,
+            link: "Harvest Alternative",
+            url:'harvest'
+        },
+        {
+            id: 4,
+            link: "Rescuetime Alternative",
+            url:'rescuetime'
+        },
+        {
+            id: 5,
+            link: "Timecamp Alternative",
+            url:'timecamp'
+        },
+        {
+            id: 6,
+            link: "Toggl Alternative",
+            url:'toggl'
+        },
+    ],
+    link2:[
+        {
+            id: 1,
+            header: "Privacy-First",
+        },
+        {
+            id: 2,
+            link: "Our Privacy Promise",
+            url:'our-privacy-policy'
+        },
+        {
+            id: 3,
+            link: "Security At Timely",
+            url:'security-at-timely'
+        },
+        {
+            id: 4,
+            link: "Data Security And GDPR",
+            url:'data-security-gdpr'
+        },
+        {
+            id: 5,
+            link: "Cookie Policy",
+            url:'cookies'
+        },
+        {
+            id: 6,
+            link: "Terms Of Service",
+            url:'terms'
+        },
+    ],
+    link3:[
+        {
+            id: 1,
+            header: "About",
+        },
+        {
+            id: 2,
+            link: "About Us",
+            url:'about'
+        },
+        {
+            id: 3,
+            link: "API Docs",
+            url:'/'
+        },
+        {
+            id: 4,
+            link: "Contact Us",
+            url:'contact'
+        },
+        {
+            id: 5,
+            link: "Sitemap",
+            url:'sitemap'
+        },
+
+    ],
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import { color } from "../utils/data/data";
 import { FaAngleDoubleRight } from "react-icons/fa";
-function Button({ title, props, children }) {
+const Button= ({ title, props, children })=>{
   return (
     <button
       type="button"
