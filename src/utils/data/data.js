@@ -178,7 +178,7 @@ export const scrollDataLeft =[
         img:pic1,
         star:star,
         position:'Author/Director',
-        name:'Cory James'
+        name:'Peter Adeshina'
     },
     {
         id:2,
@@ -199,7 +199,10 @@ export const scrollDataLeft =[
     {
         id:4,
         content: "User-friendly and effective",
-        img:pic4
+        img:pic4,
+        star:star,
+        position:'Author/Director',
+        name:'Cory James'
     },
     {
         id:5,

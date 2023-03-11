@@ -390,32 +390,31 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   max-height: 600px;
-  overflow: scroll;
+  overflow: hidden;
+  transform: skewX(-6deg);
 }
 
 .column {
   position: relative;
   overflow: scroll;
-  transform-origin: center;
+  transform-origin: center;  
 }
 
 .card-wrapper {
   position: relative;
   transform-style: preserve-3d;
-
-
-
 }
 
 .card {
-  /* width: 100%; */
-  /* transition: transform 0.5s; */
   padding: 10px;
   margin: 5px;
   height:200px;
   color: #000;
+  margin:10px;
   border-radius: 15px;
   background-color: rgb(254, 254, 254);
+  transform: skewX(-2deg);
+  transform: skewY(6deg);
 
 }
 
@@ -456,12 +455,14 @@
   .container {
     grid-template-columns: repeat(2, 1fr);
     max-height: 400px;
+    transform: skewX(0deg);
+  }
+  .card{
+    transform: skewX(0deg);
+    transform: skewY(0deg);
   }
   .TrustedContainer {
     flex-direction: column;
-  }
-  .column{
-    transform: rotateZ(0deg);
   }
 }
 
@@ -576,6 +577,11 @@
     align-items: center;
     max-height: 400px;
     margin: auto;
+    transform: skewX(0deg);
+  }
+  .card{
+    transform: skewX(0deg);
+    transform: skewY(0deg);
   }
 }
 

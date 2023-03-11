@@ -13,7 +13,11 @@ function ScrollCard() {
     const scrollInterval = setInterval(() => {
       scrollTop += 1;
       setScrollPosition(scrollTop);
-    }, 20);
+      // Check if scrollTop exceeds the height of the scrollable content
+    if (scrollTop >= container.scrollHeight - container.clientHeight) {
+      scrollTop = 0;
+    }
+    }, 15);
 
     return () => clearInterval(scrollInterval);
   }, []);
@@ -29,7 +33,7 @@ function ScrollCard() {
     <div className="container" ref={containerRef}>
       <div className="column" >
         <div className="card-wrapper" style={{
-          transform: `translate3d(0px, ${-scrollPosition / 40}%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`,
+          transform: `translate3d(0px, ${-scrollPosition / 80}%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`,
           transformStyle: 'preserve-3d',
           willChange: 'transform',
         }}>
@@ -51,7 +55,7 @@ function ScrollCard() {
       </div>
       <div className="column" >
         <div className="card-wrapper" style={{
-          transform: `translate3d(0px, ${-scrollPosition / 40}%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`,
+          transform: `translate3d(0px, ${-scrollPosition / 60}%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)`,
           transformStyle: 'preserve-3d',
           willChange: 'transform',
         }}>
