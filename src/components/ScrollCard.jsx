@@ -14,20 +14,28 @@ function ScrollCard() {
       scrollTop += 1;
       setScrollPosition(scrollTop);
       // Check if scrollTop exceeds the height of the scrollable content
-    if (scrollTop >= container.scrollHeight - container.clientHeight) {
+     if (scrollTop >= container.scrollHeight - container.clientHeight) {
+      const newCards = [...scrollDataLeft];
+      const firstCard = newCards.shift();
+      newCards.push(firstCard);
+      setCardData(newCards);
       scrollTop = 0;
     }
-    }, 15);
+  }, 10);
 
     return () => clearInterval(scrollInterval);
+
+    
   }, []);
+  const [cardData, setCardData] = useState(scrollDataLeft);
+  const scrollDataLeftRepeated = cardData.concat(cardData.slice(0, 2));
 
-  const scrollDataLeftRepeated = [];
+  // const scrollDataLeftRepeated = [];
 
-  // Repeat the scrollDataLeft array 3 times
-  for (let i = 0; i < 3; i++) {
-    scrollDataLeftRepeated.push(...scrollDataLeft);
-  }
+  // // Repeat the scrollDataLeft array 3 times
+  // for (let i = 0; i < 3; i++) {
+  //   scrollDataLeftRepeated.push(...scrollDataLeft);
+  // }
 
   return (
     <div className="container" ref={containerRef}>

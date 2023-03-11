@@ -25,6 +25,27 @@ import pic8 from '../assets/giovanni.webp'
 import pic9 from '../assets/cecillia.svg'
 import pic10 from '../assets/cecillia.svg'
 import star from '../assets/star.svg'
+
+import step1 from '../assets/639cdb3636d221a84fd9b27b_time_save_home.webp'
+import step2 from '../assets/639cdb35f8822842f930e577_billable_home.webp'
+import step3 from '../assets/639cdb35882c7f3351431de3_people_home.webp'
+
+import icon1 from '../assets/asana.png'
+import icon2 from '../assets/azuread.png'
+import icon3 from '../assets/Yellow logo.png'
+import icon4 from '../assets/github.png'
+import icon5 from '../assets/gmail.png'
+import icon6 from '../assets/calender.png'
+import icon7 from '../assets/harvest.png'
+import icon8 from '../assets/jira.png'
+import icon9 from '../assets/present.png'
+import icon10 from '../assets/monday.jpeg'
+import icon11 from '../assets/office.png'
+import icon12 from '../assets/outlook.png'
+import icon13 from '../assets/quickbooks.png'
+import icon14 from '../assets/todois.png'
+import icon15 from '../assets/toggl.svg'
+
 export const headerData = [
     // {
     //     id: 1,
@@ -252,4 +273,92 @@ export const scrollDataLeft =[
         position:'Author/Director',
         name:'Cory James'
     },
+]
+
+export const stepData=[
+    {
+        id: 1,
+        img: step1,
+        header:'Save hours on time tracking',
+        content: 'Timely’s simple UI and automatic time tracking have helped other companies reduce timesheet admin by 75%.',
+        position:'row'
+    },
+    {
+        id: 2,
+        img: step2,
+        header:'Capture every billable detail',
+        content: 'By capturing every second of your work day, Timely stops billable time from falling through the cracks. Report and invoice clients transparently, and use accurate company time data to improve project rates and budgets.',
+        position:'row-reverse'
+    },
+    {
+        id: 3,
+        img: step3,
+        header:'Empower your people',
+        content: 'Timely’s gorgeous design, intuitive controls and fierce protection of individual privacy make it a time tracking tool that people actually enjoy using.',
+        position:'row'
+    },
+]
+
+export const stackIcon=[
+    {
+        id:1,
+        icon: icon1,
+    },
+    {
+        id:2,
+        icon: icon2,
+    },
+    {
+        id:3,
+        icon: icon3,
+    },
+    {
+        id:4,
+        icon: icon4,
+    },
+    {
+        id:5,
+        icon: icon5,
+    },
+    {
+        id:6,
+        icon: icon6,
+    },
+    {
+        id:7,
+        icon: icon7,
+    },
+    {
+        id:8,
+        icon: icon8,
+    },
+    {
+        id:9,
+        icon: icon9,
+    },
+    {
+        id:10,
+        icon: icon10,
+    },
+    {
+        id:11,
+        icon: icon11,
+    },
+    {
+        id:12,
+        icon: icon12,
+    },
+    {
+        id:13,
+        icon: icon13,
+    },
+    {
+        id:14,
+        icon: icon14,
+    },
+    {
+        id:15,
+        icon: icon15,
+    },
+
 ]
