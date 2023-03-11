@@ -16,11 +16,11 @@ const Tracking = () => {
             Forget timers, note taking and manual input—
             <span style={{ color: color.black, fontWeight: 700 }}>
               Timely
-            </span>{" "}
-            can{" "}
+            </span>
+            can
             <span style={{ color: color.black, fontWeight: 700 }}>
               track time
-            </span>{" "}
+            </span>
             spent in every web and desktop app automatically for you.
           </p>
           <p>

@@ -6,7 +6,7 @@ import { color } from '../utils/data/data'
 
 function HeroContainer() {
   return (
-    <div className="heroContainer" style={{backgroundColor: color.primary}}>
+    <div className="heroContainer" >
 
     <Header />
     <HeroSection />

@@ -15,7 +15,7 @@ const HeroSection = () => {
           </div>
           <div className="timely__main">
             <p>The world's best</p>
-            <p><span className="gradient__02">AI-powered</span> automatic time tracker</p>
+            <p className="content"><span className="gradient__02">AI-powered</span> automatic time tracker</p>
           </div>
           <div className="timely__last">
             <p className="timely__textlast">

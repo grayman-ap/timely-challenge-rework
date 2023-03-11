@@ -36,6 +36,7 @@
 /* Header Section  */
 .heroContainer {
   width: 100%;
+  background: linear-gradient(124deg, rgba(73, 28, 139, 1) 47%, rgba(85, 40, 150, 1) 65%, rgba(100, 43, 187, 1) 78%)
 }
 
 .main-hero {
@@ -178,6 +179,7 @@
 
 .timely__companiesHeader {
   text-align: center;
+  margin: 15px 0;
 }
 
 .timely__images {
@@ -211,10 +213,13 @@
   gap: 30px;
   padding: 40px;
   margin: 50px;
+  border-radius: 20px;
+
 }
 
 .tracking .tracking__mainContent {
-  width: 50%
+  width: 50%;
+  border-radius: 20px;
 }
 
 .tracking .tracking__mainContent p {
@@ -232,7 +237,8 @@
 }
 
 .tracking__text {
-  width: 40%
+  width: 40%;
+  border-radius: 20px;
 }
 
 .tracking__text p {
@@ -256,7 +262,7 @@
 }
 
 .borderBottom span {
-  width: 5%;
+  width: 6%;
   height: 2px;
   background-color: #8b3ffc83;
   margin-bottom: 70px;
@@ -267,36 +273,46 @@
   justify-content: space-between;
   margin: 50px;
   padding: 20px;
-  gap:20px;
+  gap: 20px;
+
+  border-radius: 20px;
+
 }
-.track__data{
+
+.track__data {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: left;
+  border-radius: 20px;
+
 }
-.track__data .icon{
+
+.track__data .icon {
   font-size: 50px;
   color: #A368FD !important;
 }
-.track__data .title{
-  font-size:35px ;
-  color:rgb(0, 17, 65);
+
+.track__data .title {
+  font-size: 35px;
+  color: rgb(0, 17, 65);
   font-family: var(--fontFamily);
   font-style: normal;
   font-weight: 700;
-  margin:15px 0 0 0;
+  margin: 15px 0 0 0;
 }
-.track__data .content{
+
+.track__data .content {
   font-size: 20px;
   font-family: 'Book';
   font-weight: 400;
-  color:rgb(105, 112, 119);
+  color: rgb(105, 112, 119);
   font-style: normal;
   line-height: 30px;
   margin-bottom: 25px;
 }
-.track__data .link{
+
+.track__data .link {
   color: rgb(138, 63, 252);
   text-decoration: none;
   display: flex;
@@ -304,10 +320,61 @@
 
 
 }
-.track__data .link span{
+
+.track__data .link span {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* The trusted container is starting here */
+.TrustedContainer {
+  display: flex;
+  background-color: #6829C4;
+  width: 100%;
+  gap:20px;
+}
+.trustContainer {
+  flex: .5;
+}
+
+.scrollContainer {
+  flex:.5;
+}
+.trusted__container {
+  margin: 50px;
+  padding: 20px;
+}
+
+.trusted__map {
+  display: flex;
+}
+.trust__d{
+  display: flex;
+}
+.trust__data {
+  margin-left: 30px
+}
+.trust__data img{
+  width:70px;
+}
+.trusted__content .title, .content{
+  margin-top:20px;
+}
+.trusted__content .title p{
+  font-size: 72px;
+  font-family: var(--fontFamily);
+  font-weight: 700;
+  line-height: 70px;
+  font-style: normal;
+}
+.trusted__content .content p{
+  font-size: 20px;
+  font-family:'Book';
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom:30px;
 }
 /* MEDIA QUERY FOR header */
 
@@ -336,6 +403,10 @@
     width: 80%;
     line-height: 100px;
     text-align: center;
+  }
+
+  .timely__main .content {
+    line-height: 30px;
   }
 
   .timely__last {
@@ -370,14 +441,55 @@
     font-size: 18px;
     line-height: 27px;
   }
+
   .tracker__container {
     flex-direction: column;
+    margin: 30px;
+    padding: 15px;
   }
-  .track__data{
+  .TrustedContainer {
+    flex-direction: column;
+  }
+
+  .track__data {
     align-items: center;
   }
-  .track__data .title{
-    font-size:30px ;
+
+  .track__data .title {
+    font-size: 28px;
+  }
+
+  .track__data .content {
+    text-align: center;
+  }
+
+  .track__data .content {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .borderBottom span {
+    width: 8%;
+  }
+  .trusted__container {
+    margin:60px 10px;
+    padding: 5px;
+    align-items: left;
+  }
+  .trusted__map {
+   flex-direction: column;
+    align-items: left;
+  }
+  .trust__data img{
+    width:50px;
+  }
+  .trusted__content .title p{
+    font-size: 52px;
+    line-height: 50px;
+  }
+  .trusted__content .content p{
+    font-size: 18px;
+    line-height: 26px;
   }
 }
 

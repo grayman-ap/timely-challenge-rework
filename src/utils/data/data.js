@@ -6,6 +6,10 @@ import img5 from "../assets/workdoy.svg"
 import img6 from "../assets/marriott.svg"
 import img7 from "../assets/yale.svg"
 import img8 from "../assets/grant.svg"
+import logo2 from '../assets/winter.svg'
+import logo3 from '../assets/usability.svg'
+import logo4 from '../assets/leader.svg'
+import logo5 from '../assets/result.svg'
 import {MdOutlineEventAvailable} from 'react-icons/md'
 import {FiUsers} from 'react-icons/fi'
 import {TbFileSpreadsheet, TbClockEdit} from 'react-icons/tb'
@@ -117,4 +121,23 @@ export const trackData = [
         link:'Project and team planning',
         url: 'planning'
     },
+]
+
+export const trustData =[
+    {
+        id: 2,
+        img: logo2,
+    },
+    {
+        id: 3,
+        img: logo3,
+    },
+    {
+        id: 4,
+        img: logo4,
+    },
+    {
+        id: 5,
+        img: logo5,
+    }
 ]
