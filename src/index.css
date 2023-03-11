@@ -924,6 +924,11 @@ margin:40px;
       justify-content: center;
       align-items: center;
       }
+      .viking__content img{
+        margin:20% auto;
+      }.viking__content img:nth-child(2){
+        display: none;
+      }
 }
 
 @media screen and (max-width:768px) {
