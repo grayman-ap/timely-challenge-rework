@@ -38,7 +38,7 @@ function Try() {
         </div>
             <div className="right">
             <Button title="Get started" />
-        <Link to="sales">
+        <Link to="sales" className='link'>
             <span className='right-sales'>30 people or more? Get a personalized introduction to Timely</span>
         </Link>
             </div>

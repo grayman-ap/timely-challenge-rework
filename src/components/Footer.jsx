@@ -34,7 +34,7 @@ function Footer() {
                 {footerData.link1.map((item)=>(
                     <div className="footer__data" key={item.id}>
                         <p>{item.header}</p>
-                        <Link to={item.url}>
+                        <Link to={item.url} className='link'>
                             <span>{item.link}</span>
                         </Link>
                     </div>
@@ -45,7 +45,7 @@ function Footer() {
                 {footerData.link2.map((item)=>(
                     <div className="footer__data" key={item.id}>
                         <p>{item.header}</p>
-                        <Link to={item.url}>
+                        <Link to={item.url} className='link'>
                             <span>{item.link}</span>
                         </Link>
                     </div>
@@ -56,7 +56,7 @@ function Footer() {
                 {footerData.link3.map((item)=>(
                     <div className="footer__data" key={item.id}>
                         <p>{item.header}</p>
-                        <Link to={item.url}>
+                        <Link to={item.url} className='link'>
                             <span>{item.link}</span>
                         </Link>
                     </div>

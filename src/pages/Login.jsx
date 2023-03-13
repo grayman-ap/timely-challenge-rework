@@ -1,8 +1,10 @@
 import React from 'react'
+import Menu from '../components/Menu'
+import LoginContainer from '../container/LoginContainer'
 
 function Login() {
   return (
-    <div>Login</div>
+   <LoginContainer />
   )
 }
 

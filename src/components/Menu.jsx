@@ -4,11 +4,10 @@ function Menu() {
   return (
     <div className="menu">
         <div className="menu__container">
-            
+        <span></span>
+        <span></span>
+        <span></span>
         </div>
-        <span></span>
-        <span></span>
-        <span></span>
     </div>
   )
 }

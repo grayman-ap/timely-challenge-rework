@@ -13,7 +13,7 @@ import logo5 from '../assets/result.svg'
 import {MdOutlineEventAvailable} from 'react-icons/md'
 import {FiUsers} from 'react-icons/fi'
 import {TbFileSpreadsheet, TbClockEdit} from 'react-icons/tb'
-
+import {FaAngleDown} from 'react-icons/fa'
 import pic1 from '../assets/Laura.webp'
 import pic2 from '../assets/fiserova.webp'
 import pic3 from '../assets/cecillia.svg'
@@ -45,7 +45,9 @@ import icon12 from '../assets/outlook.png'
 import icon13 from '../assets/quickbooks.png'
 import icon14 from '../assets/todois.png'
 import icon15 from '../assets/toggl.svg'
-
+import {TfiAngleDown}  from 'react-icons/tfi'
+import Features from "../../components/Features"
+import Learn from "../../components/Learn"
 export const headerData = [
     // {
     //     id: 1,
@@ -54,16 +56,24 @@ export const headerData = [
     {
         id: 2,
         linkTitle:'Product',
+        icon: <FaAngleDown />,
+        style:"arrowTurn",
+        hasDropdown:true,
+        dropDownContent:<Features />
        
     },
     {
         id: 3,
         linkTitle:'Resources',
+        icon: <FaAngleDown />,
+        style:"arrowTurn",
+        hasDropdown:true,
+        dropDownContent:<Learn />
     },
     {
         id: 4,
         linkTitle:'Pricing',
-        url:'pricing'
+        url:'pricing',
     },
     {
         id: 5,

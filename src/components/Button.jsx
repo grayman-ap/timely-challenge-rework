@@ -1,18 +1,20 @@
 import React from "react";
 import { color } from "../utils/data/data";
 import { FaAngleDoubleRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Button= ({ title, props, children })=>{
   return (
+    <Link to="/get-started/lets-begin">
     <button
       type="button"
-      onClick={() => alert("Button")}
+     
       style={{
-        padding: 10,
+        padding: 25,
         width: 160,
         borderRadius: 15,
         outline: 0,
         borderWidth: 0,
-        fontWeight: "bold",
+        fontWeight: 400,
         backgroundColor: color.white,
       }}
     >
@@ -21,6 +23,7 @@ const Button= ({ title, props, children })=>{
         <FaAngleDoubleRight />
       </div>
     </button>
+    </Link>
   );
 }
 

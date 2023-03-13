@@ -1,6 +1,6 @@
 import React from "react";
 import { color, trackData } from "../utils/data/data";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { TfiAngleRight } from "react-icons/tfi";
 const Tracking = () => {
   return (
@@ -41,7 +41,7 @@ const Tracking = () => {
               <span className="icon">{item.icon}</span>
               <p className="title">{item.title}</p>
               <p className="content">{item.content}</p>
-              <NavLink to={item.url}>
+              <Link to={item.url} className="link">
                 <p className="link">
                   <span>
                     {item.link}
@@ -50,7 +50,7 @@ const Tracking = () => {
                     </span>
                   </span>
                 </p>
-              </NavLink>
+              </Link>
             </div>
           ))}
         </div>

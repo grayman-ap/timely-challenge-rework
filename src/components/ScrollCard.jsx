@@ -47,10 +47,10 @@ function ScrollCard() {
         }}>
           {scrollDataLeftRepeated.map((item) => (
             <div key={item.id} className='card'>
-              <img src={item.star} alt="img" style={{width:100, marginBottom:10}}/>
+              <img src={item.star} alt="img" className="star-icon"/>
               <p className='card__content'>"{item.content}"</p>
               <div  className='card__flex'>
-              <img src={item.img} alt="img" />
+              <img src={item.img} alt="img" className="profile__pic" />
               <div>
                 <p>{item.name}</p>
                 <p>{item.position}</p>
@@ -69,10 +69,10 @@ function ScrollCard() {
         }}>
           {scrollDataLeftRepeated.map((item) => (
             <div key={item.id} className='card'>
-              <img src={item.star} alt="img" style={{width:100, marginBottom:10}} />
+                <img src={item.star} alt="img" className="star-icon"/>
               <p className='card__content'>"{item.content}"</p>
               <div  className='card__flex'>
-              <img src={item.img} alt="img" />
+              <img src={item.img} alt="img" className="profile__pic" />
               <div>
                 <p>{item.name}</p>
                 <p>{item.position}</p>
@@ -91,10 +91,10 @@ function ScrollCard() {
         }}>
           {scrollDataLeftRepeated.map((item) => (
             <div key={item.id} className='card'>
-              <img src={item.star} alt="img" style={{width:100, marginBottom:10}} />
+                <img src={item.star} alt="img" className="star-icon"/>
               <p className='card__content'>"{item.content}"</p>
-              <div className="card__flex">
-              <img src={item.img} alt="img" />
+              <div  className='card__flex'>
+              <img src={item.img} alt="img" className="profile__pic" />
               <div>
                 <p>{item.name}</p>
                 <p>{item.position}</p>

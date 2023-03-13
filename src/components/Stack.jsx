@@ -29,7 +29,7 @@ function Stack() {
                 ))}
             </div>
             <div className="stack__link">
-                <Link to="ecosystem">
+                <Link to="ecosystem" className='link'>
                     <span>Check all our integrations</span>
                 </Link>
             </div>

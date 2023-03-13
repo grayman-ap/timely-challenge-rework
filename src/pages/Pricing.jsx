@@ -1,8 +1,9 @@
 import React from 'react'
+import HeroContainer from '../container/HeroContainer'
 
 function Pricing() {
   return (
-    <div style={{color:'#000'}}>Pricing</div>
+  <HeroContainer />
   )
 }
 
