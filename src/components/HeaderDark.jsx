@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
-import logo from "../utils/assets/logo.svg";
+import logo from "../utils/assets/logoDark.svg";
 import { color, headerData } from "../utils/data/data";
 import Button from "./Button";
 import { AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import NavMenu from "./NavMenu";
 import { useGlobalContext } from "../utils/ContextProvider";
-const Header = () => {
+import { theme } from "../utils/data/data";
+const HeaderDark = () => {
   const {
     handleMouseEnter,
     handleMouseLeave,
@@ -14,7 +15,7 @@ const Header = () => {
   } = useGlobalContext();
 
   return (
-    <div className="section">
+    <div className="section" theme={theme.lightTheme} >
       <div className="section__container">
         <div className="section__logo">
           <Link to="/" className="link">
@@ -28,7 +29,7 @@ const Header = () => {
               <Link to={item.url} key={item.id} className="link">
                 <div
                   className="main__link"
-                
+                  style={{color:theme.lightTheme.color}}
                 >
                   <div>
                     <span>
@@ -49,10 +50,10 @@ const Header = () => {
               </Link>
             </div>
           ))}
-          <Button title="Get started" />
+          <Button title="Get started" bg="purple"/>
         </div>
       </div>
     </div>
   );
 };
-export default Header;
+export default HeaderDark;

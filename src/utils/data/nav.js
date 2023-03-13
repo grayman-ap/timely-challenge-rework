@@ -29,67 +29,67 @@ export const industryData ={
         id: 1,
         name:"Accountants",
         icon:<GiTrade/>,
-        url: 'accountants'
+        url: '/accountants'
     },
     {
         id: 2,
         name:"Agencies",
         icon:<BsTrophy/>,
-        url: 'agencies'
+        url: '/agencies'
     },
     {
         id: 3,
         name:"Consulting Firms",
         icon:<MdOutlineMonitorHeart/>,
-        url: 'consulting-firms'
+        url: '/consulting-firms'
     },
     {
         id: 4,
         name:"Creatives",
         icon:< FiMonitor/>,
-        url: 'creatives'
+        url: '/creatives'
     },
     {
         id: 5,
         name:"Employees ",
         icon:< TbFileCertificate/>,
-        url: 'employees'
+        url: '/employees'
     },
     {
         id: 6,
         name:"Freelancers",
         icon:< BsPersonVideo3/>,
-        url: 'freelancers'
+        url: '/freelancers'
     },
     {
         id: 7,
         name:"Lawyers",
         icon:<GiScales/>,
-        url: 'lawyers',
+        url: '/lawyers',
     },
     {
         id: 8,
         name:"Project Managers",
         icon:< ImStack/>,
-        url: 'project-managers'
+        url: '/project-managers'
     },
     {
         id: 9,
         name:"Remote Workers",
         icon:< FiMonitor/>,
-        url: 'remote-workers'
+        url: '/remote-workers'
     },
     {
         id: 10,
         name:"Software Companies",
         icon:< AiFillCodeSandboxCircle/>,
-        url: 'software-companies'
+        url: '/software-companies'
     },
     {
         id: 12,
         name:"Teams",
         icon:< AiOutlineTeam/>,
-        url: 'teams'
+        url: '/teams'
     },
 ],
 apps:[
@@ -121,43 +121,43 @@ export const integrationData = [
         id:1,
         icon: icon1,
         name: 'Asana',
-        url: 'asana'
+        url: '/asana'
     },
     {
         id:2,
         icon: icon2,
         name: 'Azure AD',
-        url: 'azure'
+        url: '/azure'
     },
     {
         id:3,
         icon: icon3,
         name: 'Basecamp',
-        url: 'basecamp'
+        url: '/basecamp'
     },
     {
         id:4,
         icon: icon4,
         name: 'Github',
-        url: 'github'
+        url: '/github'
     },
     {
         id:5,
         icon: icon5,
         name: 'Gmail',
-        url: 'gmail'
+        url: '/gmail'
     },
     {
         id:6,
         icon: icon6,
         name: 'Google Calender',
-        url: 'google-calender'
+        url: '/google-calender'
     },
     {
         id:7,
         icon: icon7,
         name: 'Harvest',
-        url: 'harvest'
+        url: '/harvest'
     },
 ]
 export const featureData = [
@@ -167,7 +167,7 @@ export const featureData = [
         title: 'Track time',
         content:'Get the complete picture of your work day with zero effort',
         link:'Automate time tracking',
-        url: 'automatic-time-tracking'
+        url: '/automatic-time-tracking'
     },
     {
         id: 2,
@@ -175,7 +175,7 @@ export const featureData = [
         title: 'Track projects',
         content:'Monitor budgets, hours and activities in real time',
         link:'Run smarter projects',
-        url: 'track-projects'
+        url: '/track-projects'
     },
     {
         id: 3,
@@ -183,7 +183,7 @@ export const featureData = [
         title: 'Track teams',
         content:'Get a complete overview of your team’s time',
         link:'Lead happier teams',
-        url: 'track-teams'
+        url: '/track-teams'
     },
     {
         id: 4,
@@ -191,7 +191,7 @@ export const featureData = [
         title: 'Track plans',
         content:'Real-time feedback loop of how plans actually unfold',
         link:'Project and team planning',
-        url: 'planning'
+        url: '/planning'
     },
 ]
 
@@ -202,42 +202,42 @@ export const learnData = [
         icon: <CgNotes />,
         title: 'Blog',
         content:'Productivity insights and advice, plus Timely tips and product news.',
-        url: 'blog'
+        url: '/blog'
     },
     {
         id: 2,
         icon: <FaGlasses />,
         title: 'Time tracking guide',
         content:'Here’s everything you ever needed to know about time tracking.',
-        url: 'time-tracking-guide'
+        url: '/time-tracking-guide'
     },
     {
         id: 3,
         icon: <CiCalculator1 />,
         title: 'Time card calculator',
         content:'Make calculating employees’ hours simple and quick.',
-        url:'time-card-calculator',
+        url:'/time-card-calculator',
     },
     {
         id: 4,
         icon: <BsTrophy />,
         title: 'Success stories',
         content:'See how teams like yours reach peak productivity with Timely.',
-        url:'case-studies',
+        url:'/case-studies',
     },
     {
         id: 5,
         icon: <CgScreen />,
         title: 'Demo',
         content:'Watch quick videos to learn the basics of Timely.',
-        url:'webiners',
+        url:'/webiners',
     },
     {
         id: 6,
         icon: <MdPodcasts />,
         title: 'Podcasts',
         content:'A 5-episode probe of our complex relationship with time.',
-        url:'podcasts',
+        url:'/podcasts',
     },
 ]
 
@@ -246,7 +246,7 @@ export const supportData =[
         id: 1,
         name:"Talk to sales",
         icon:<BiChat/>,
-        url: 'sales'
+        url: '/sales'
     },
     {
         id: 2,
@@ -258,7 +258,7 @@ export const supportData =[
         id: 3,
         name:"Contact us",
         icon:<HiOutlineMailOpen/>,
-        url: 'contact'
+        url: '/contact'
     },
 ]
 
@@ -267,18 +267,69 @@ export const blogData =[
         id: 1,
         img: img1,
         content:'Self-management skills: What they are and why they’re important',
-        url:'self-management-skills'
+        url:'/self-management-skills'
     },
     {
         id: 2,
         img: img2,
         content:'How to track time in a team',
-        url:'how-to-track-time'
+        url:'/how-to-track-time'
     },
     {
         id: 3,
         img: img3,
         content:'Why is Time Tracking Important',
-        url:'why-is-time-tracking-important'
+        url:'/why-is-time-tracking-important'
+    },
+]
+
+export const filterData= [
+    {
+        id : 1,
+        title: 'Time tracking'
+    },
+    {
+        id : 2,
+        title: 'Work management'
+    },
+    {
+        id : 3,
+        title: 'Task management'
+    },
+    {
+        id : 4,
+        title: 'Project management'
+    },
+    {
+        id : 5,
+        title: 'Time management'
+    },
+    {
+        id : 6,
+        title: 'Productivity'
+    },
+    {
+        id : 7,
+        title: 'Product updates'
+    },
+    {
+        id : 8,
+        title: 'Other'
+    },
+    {
+        id : 9,
+        title: 'Company News'
+    },
+    {
+        id : 10,
+        title: 'Deep work'
+    },
+    {
+        id : 11,
+        title: 'Hybrid and remote work'
+    },
+    {
+        id : 12,
+        title: 'Collaboration'
     },
 ]

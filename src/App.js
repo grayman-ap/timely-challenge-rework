@@ -2,6 +2,7 @@ import { BigTeam, Home, Login, Pricing, Sales, SmallTeam } from "./pages";
 import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { color } from "./utils/data/data";
 import TeamSize from "./components/Team";
+import BlogApp from "./blog/pages/BlogApp";
 function App() {
   return (
     <Router>
@@ -14,6 +15,7 @@ function App() {
           <Route exact path="/get-started/team-size" element={<TeamSize />} />
           <Route exact path="/get-started/small-teams" element={<SmallTeam  />} />
           <Route exact path="/get-started/big-teams" element={<BigTeam />} />
+          <Route exact path="/blog" element={<BlogApp />} />
         </Routes>
     </div>
     </Router>

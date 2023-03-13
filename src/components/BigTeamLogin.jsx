@@ -7,12 +7,8 @@ import LoginButton from './LoginButton'
 import { Link } from 'react-router-dom'
 function BigTeamLogin() {
   return (
-    <div className="login">
-    <div className="getstarted">
-        <div className="getstarted__container">
-            Big Teams
-    </div>
-    </div>
+    <div className="teams">
+     Big Teams
     </div>
   )
 }

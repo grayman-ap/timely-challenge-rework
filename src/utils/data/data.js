@@ -48,6 +48,21 @@ import icon15 from '../assets/toggl.svg'
 import {TfiAngleDown}  from 'react-icons/tfi'
 import Features from "../../components/Features"
 import Learn from "../../components/Learn"
+
+export const  theme = {
+    lightTheme:{
+        color:'#001141'
+    }
+    ,
+
+    darkTheme:
+        {
+            color:'green'
+        }
+
+    
+}
+
 export const headerData = [
     // {
     //     id: 1,
@@ -56,7 +71,7 @@ export const headerData = [
     {
         id: 2,
         linkTitle:'Product',
-        icon: <FaAngleDown />,
+        icon: <TfiAngleDown />,
         style:"arrowTurn",
         hasDropdown:true,
         dropDownContent:<Features />
@@ -65,7 +80,7 @@ export const headerData = [
     {
         id: 3,
         linkTitle:'Resources',
-        icon: <FaAngleDown />,
+        icon: <TfiAngleDown />,
         style:"arrowTurn",
         hasDropdown:true,
         dropDownContent:<Learn />
@@ -73,17 +88,17 @@ export const headerData = [
     {
         id: 4,
         linkTitle:'Pricing',
-        url:'pricing',
+        url:'/pricing',
     },
     {
         id: 5,
         linkTitle:'Talk to sales',
-        url:'sales'
+        url:'/sales'
     },
     {
         id: 6,
         linkTitle:'Login',
-        url:'login'
+        url:'/login'
     },
    
 ]

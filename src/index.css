@@ -84,7 +84,7 @@ button:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap:2px
+  gap:8px
 }
 /* Hero section */
 .hero {
@@ -962,7 +962,7 @@ margin:40px;
   .timely__main {
     font-size: 40px;
     width: 80%;
-    /* line-height: 100px; */
+    line-height: 90px;
     text-align: center;
   }
 

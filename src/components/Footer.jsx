@@ -66,7 +66,7 @@ function Footer() {
             </div>
         </div>
         <div className="footer__last">
-            <p>Copyright 2023 - Memory  As</p>
+            <p>Copyright 2023 - AIQ</p>
         </div>
     </div>
   )
